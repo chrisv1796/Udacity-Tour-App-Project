@@ -18,7 +18,6 @@ public class CoffeeFragment extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
@@ -57,13 +56,11 @@ public class CoffeeFragment extends Fragment {
         ListView listView = rootView.findViewById(R.id.list_view);
         ArrayList<Places> placesList = new ArrayList<>();
 
-        placesList.add(new Places("Dr Smood", "(786) 675-5415", "701 S Miami Ave Suite 345", R.drawable.dr_smood, "\"Great Coffee and friendly staff! This is my go to coffee place day or night they are open and ready to serve you the best cup of coffee you will ever have!\""));
-        placesList.add(new Places("Vice City Bean", "(305) 726-8031", "1657 N Miami Ave unit c, Miami, FL 33136", R.drawable.vice_city_bean  ));
-        placesList.add(new Places("Panther Coffee", "(305) 677-3952", "2390 NW 2nd Ave, Miami, FL 33127", R.drawable.panther_coffee  ));
-        placesList.add(new Places("ALL DAY", "(305) 699-3447", "1035 N Miami Ave, Miami, FL 33136", R.drawable.all_day));
-        placesList.add(new Places("Suite Habana Cafe", "(786) 387-9771", "2609 N Miami Ave, Miami, FL 33127", R.drawable.suite_habana ));
-        placesList.add(new Places("Tea Room", "(786) 805-4655", "788 Brickell Plaza, Miami, FL 33131", R.drawable.tea_room  ));
-        placesList.add(new Places("Tea & Poets", "(786) 216-7201", "35701 Sunset Dr Unit 126, South Miami, FL 33143", R.drawable.tea_poets  ));
+        placesList.add(new Places(getString(R.string.dr_smood), getString(R.string.dr_smood_phone), getString(R.string.dr_smood_address), R.drawable.tea_poets, getString(R.string.dr_smood_summary)));
+        placesList.add(new Places(getString(R.string.vice_city_bean), getString(R.string.vice_city_bean_phone), getString(R.string.vice_city_bean_address), R.drawable.tea_poets));
+        placesList.add(new Places(getString(R.string.suite_habana), getString(R.string.suite_habana_phone), getString(R.string.suite_habana_address), R.drawable.suite_habana));
+        placesList.add(new Places(getString(R.string.tea_room), getString(R.string.tea_room_phone), getString(R.string.tea_room_address), R.drawable.tea_poets));
+        placesList.add(new Places(getString(R.string.tea_poets), getString(R.string.tea_poets_phone), getString(R.string.tea_poets_address), R.drawable.tea_poets));
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

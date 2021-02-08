@@ -31,8 +31,8 @@ public class PlacesAdapter extends ArrayAdapter<Places> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         View listItem = convertView;
 
-        if(listItem == null)
-            listItem = LayoutInflater.from(mContext).inflate(R.layout.list_item,parent,false);
+        if (listItem == null)
+            listItem = LayoutInflater.from(mContext).inflate(R.layout.list_item, parent, false);
 
         Places currentPlace = placesList.get(position);
         ImageView placeImageView = listItem.findViewById(R.id.place_image);

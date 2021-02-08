@@ -55,14 +55,11 @@ public class DiningFragment extends Fragment {
         ListView listView = rootView.findViewById(R.id.list_view);
         ArrayList<Places> placesList = new ArrayList<>();
 
-        placesList.add(new Places("The Capital Grille", "(305)374-4500", "444 Brickell Ave, Miami, FL 33131", R.drawable.capital_grille_image, "The Capital Grille is an amazing place to dine! Great prices and very friendly staff. Oh! And the food is great! This is one of my favorite places to go to in Miami! You should definitly stop by and if you do tell Danny I sent you! He might even give you a discount!"  ));
-        placesList.add(new Places("KYU", "(786)577-0150", "251 NW 25th St, Miami, FL 33127", R.drawable.kyu_image  ));
-        placesList.add(new Places("Bombay Darbar", "(305)444-7272", "2901 Florida Ave, Miami, FL 33133", R.drawable.dombay_darbar  ));
-        placesList.add(new Places("Zuma Miami", "(305) 577-0277", "270 Biscayne Blvd Way, Miami, FL 33131", R.drawable.zuma_miami  ));
-        placesList.add(new Places("Joe's Stone Crab Restaurant", "(305) 673-0365", "11 Washington Ave, Miami Beach, FL 33139", R.drawable.joes_crab ));
-        placesList.add(new Places("Santorini by Georgios", "(305) 672-6624", "101 Ocean Dr, Miami Beach, FL 33139", R.drawable.santorini_georgios  ));
-        placesList.add(new Places("CRUST", "(305) 371-7065", "668 NW 5th St, Miami, FL 33128", R.drawable.crust_image  ));
-        placesList.add(new Places("KYU", "(786)577-0150", "251 NW 25th St, Miami, FL 33127", R.drawable.kyu_image  ));
+        placesList.add(new Places(getString(R.string.capital_grille), getString(R.string.capital_grille_phone), getString(R.string.capital_grille_address), R.drawable.crust_image, getString(R.string.capital_grille_summary)));
+        placesList.add(new Places(getString(R.string.bombay_darbar), getString(R.string.bombay_darbar_phone), getString(R.string.bombay_darbar_address), R.drawable.tea_poets));
+        placesList.add(new Places(getString(R.string.santorini), getString(R.string.santorini_phone), getString(R.string.santorini_address), R.drawable.crust_image));
+        placesList.add(new Places(getString(R.string.crust), getString(R.string.crust_phone), getString(R.string.crust_address), R.drawable.crust_image));
+        placesList.add(new Places(getString(R.string.joes_crab), getString(R.string.crust_phone), getString(R.string.crust_address), R.drawable.crust_image));
 
         PlacesAdapter placesAdapter = new PlacesAdapter(getActivity(), placesList);
         listView.setAdapter(placesAdapter);
@@ -79,6 +76,6 @@ public class DiningFragment extends Fragment {
                 startActivity(intent);
             }
         });
-    return rootView;
+        return rootView;
     }
 }

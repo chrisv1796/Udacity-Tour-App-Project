@@ -54,13 +54,11 @@ public class ArtsyFragment extends Fragment {
         ListView listView = rootView.findViewById(R.id.list_view);
         ArrayList<Places> placesList = new ArrayList<>();
 
-        placesList.add(new Places(getString(R.string.rubell_museum), getString(R.string.rubell_museum_phone), getString(R.string.rubell_museum_address), R.drawable.rubell_museum, getString(R.string.rubell_museum_summary)  ));
-        placesList.add(new Places(getString(R.string.art_tech), getString(R.string.art_tech_phone), getString(R.string.art_tech_address), R.drawable.art_tech_house  ));
-        placesList.add(new Places(getString(R.string.avant), getString(R.string.avant_phone), getString(R.string.avant_address), R.drawable.avant_gallery  ));
-        placesList.add(new Places(getString(R.string.yeelen), getString(R.string.yeelen_phone), getString(R.string.yeelen_address), R.drawable.yeelen_gallery  ));
-        placesList.add(new Places(getString(R.string.vizcaya), getString(R.string.vizcaya_phone), getString(R.string.vizcaya_address), R.drawable.vizcaya_garden ));
-        placesList.add(new Places(getString(R.string.zoo_miami), getString(R.string.zoo_miami_phone), getString(R.string.zoo_miami_address), R.drawable.zoo_miami  ));
-        placesList.add(new Places(getString(R.string.jewish_museum), getString(R.string.jewish_museum_phone), getString(R.string.jewish_museum_address), R.drawable.jewish_museum  ));
+        placesList.add(new Places(getString(R.string.rubell_museum), getString(R.string.rubell_museum_phone), getString(R.string.rubell_museum_address), R.drawable.vizcaya_garden, getString(R.string.rubell_museum_summary)));
+        placesList.add(new Places(getString(R.string.art_tech), getString(R.string.art_tech_phone), getString(R.string.art_tech_address), R.drawable.art_tech_house));
+        placesList.add(new Places(getString(R.string.avant), getString(R.string.avant_phone), getString(R.string.avant_address), R.drawable.yeelen_gallery));
+        placesList.add(new Places(getString(R.string.vizcaya), getString(R.string.vizcaya_phone), getString(R.string.vizcaya_address), R.drawable.vizcaya_garden));
+        placesList.add(new Places(getString(R.string.zoo_miami), getString(R.string.zoo_miami_phone), getString(R.string.zoo_miami_address), R.drawable.vizcaya_garden));
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

@@ -55,13 +55,11 @@ public class PopularFragment extends Fragment {
         ListView listView = rootView.findViewById(R.id.list_view);
         ArrayList<Places> placesList = new ArrayList<>();
 
-        placesList.add(new Places(getString(R.string.elleven_miami), getString(R.string.elleven_miami_phone), getString(R.string.elleven_miami_address), R.drawable.eleven_miami, getString(R.string.elleven_miami_summary)));
-        placesList.add(new Places(getString(R.string.club_space), getString(R.string.club_space_phone), getString(R.string.club_space_address), R.drawable.club_space  ));
-        placesList.add(new Places(getString(R.string.blackbird), getString(R.string.blackbird_phone), getString(R.string.blackbird_address), R.drawable.blackbird  ));
-        placesList.add(new Places(getString(R.string.el_patio), getString(R.string.el_patio_phone), getString(R.string.el_patio_address), R.drawable.el_patio  ));
-        placesList.add(new Places(getString(R.string.ball_chain), getString(R.string.ball_chain_phone), getString(R.string.ball_chain_address), R.drawable.ball_chain ));
-        placesList.add(new Places(getString(R.string.shots), getString(R.string.shots_phone), getString(R.string.shots_address), R.drawable.shots_miami  ));
-        placesList.add(new Places(getString(R.string.redbar), getString(R.string.redbar_phone), getString(R.string.redbar_address), R.drawable.redbar_brickell  ));
+        placesList.add(new Places(getString(R.string.elleven_miami), getString(R.string.elleven_miami_phone), getString(R.string.elleven_miami_address), R.drawable.blackbird, getString(R.string.elleven_miami_summary)));
+        placesList.add(new Places(getString(R.string.blackbird), getString(R.string.blackbird_phone), getString(R.string.blackbird_address), R.drawable.blackbird));
+        placesList.add(new Places(getString(R.string.ball_chain), getString(R.string.ball_chain_phone), getString(R.string.ball_chain_address), R.drawable.blackbird));
+        placesList.add(new Places(getString(R.string.shots), getString(R.string.shots_phone), getString(R.string.shots_address), R.drawable.shots_miami));
+        placesList.add(new Places(getString(R.string.redbar), getString(R.string.redbar_phone), getString(R.string.redbar_address), R.drawable.shots_miami));
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
